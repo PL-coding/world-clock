@@ -61,3 +61,12 @@ footer {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
 }
+
+footer a {
+  color: #28e2ff;
+}
+
+.brand {
+  color: #ff911c;
+  font-weight: bold;
+}
