@@ -14,36 +14,43 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select name="" id="">
+      <select name="" id="cities">
         <option value="">Select a city</option>
-        <option value="">Sydney</option>
-        <option value="">Beijing</option>
-        <option value="">Cairo</option>
-        <option value="">Lima</option>
-        <option value="">Vienna</option>
-        <option value="">London</option>
+        <option value="current">Current location</option>
+        <option value="Africa/Cairo">Cairo</option>
+        <option value="Africa/Johannesburg">Johannesburg</option>
+        <option value="Asia/Kathmandu">Kathmandu</option>
+        <option value="America/Lima">Lima</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Australia/Perth">Perth</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="America/Vancouver">Vancouver</option>
+        <option value="Europe/Vienna">Vienna</option>
       </select>
-      <div class="city" id="sydney">
-        <div>
-          <h2>Sydney</h2>
-          <div class="date"></div>
+      <div id="city">
+        <div class="city" id="sydney">
+          <div>
+            <h2>Sydney</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="city">
-        <h2>New York</h2>
-        <div class="date"></div>
-        <div class="time"></div>
-      </div>
-      <div class="city">
-        <h2>Tokyo</h2>
-        <div class="date"></div>
-        <div class="time"></div>
-      </div>
-      <div class="city">
-        <h2>Perth</h2>
-        <div class="date"></div>
-        <div class="time"></div>
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="vancouver">
+          <div>
+            <h2>Vancouver</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
     <footer>
