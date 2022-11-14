@@ -57,6 +57,7 @@ select {
 
 .temperature {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-evenly;
   margin: 10px 0;

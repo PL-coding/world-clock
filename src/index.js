@@ -1,30 +1,36 @@
 function showCurrentTime() {
   let sydneyElement = document.querySelector("#sydney");
-  let sydneyDateElement = sydneyElement.querySelector(".date");
-  let sydneyTimeElement = sydneyElement.querySelector(".time");
-  let sydneyTime = moment().tz("Australia/Sydney");
-  sydneyDateElement.innerHTML = sydneyTime.format("Do MMMM YYYY");
-  sydneyTimeElement.innerHTML = sydneyTime.format(
-    "h:mm:ss [<small>] A [</small>]"
-  );
+  if (sydneyElement) {
+    let sydneyDateElement = sydneyElement.querySelector(".date");
+    let sydneyTimeElement = sydneyElement.querySelector(".time");
+    let sydneyTime = moment().tz("Australia/Sydney");
+    sydneyDateElement.innerHTML = sydneyTime.format("Do MMMM YYYY");
+    sydneyTimeElement.innerHTML = sydneyTime.format(
+      "h:mm:ss [<small>] A [</small>]"
+    );
+  }
 
   let tokyoElement = document.querySelector("#tokyo");
-  let tokyoDateElement = tokyoElement.querySelector(".date");
-  let tokyoTimeElement = tokyoElement.querySelector(".time");
-  let tokyoTime = moment().tz("Asia/Tokyo");
-  tokyoDateElement.innerHTML = tokyoTime.format("Do MMMM YYYY");
-  tokyoTimeElement.innerHTML = tokyoTime.format(
-    "h:mm:ss [<small>] A [</small>]"
-  );
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+    let tokyoTime = moment().tz("Asia/Tokyo");
+    tokyoDateElement.innerHTML = tokyoTime.format("Do MMMM YYYY");
+    tokyoTimeElement.innerHTML = tokyoTime.format(
+      "h:mm:ss [<small>] A [</small>]"
+    );
+  }
 
   let vancouverElement = document.querySelector("#vancouver");
-  let vancouverDateElement = vancouverElement.querySelector(".date");
-  let vancouverTimeElement = vancouverElement.querySelector(".time");
-  let vancouverTime = moment().tz("America/Vancouver");
-  vancouverDateElement.innerHTML = vancouverTime.format("Do MMMM YYYY");
-  vancouverTimeElement.innerHTML = vancouverTime.format(
-    "h:mm:ss [<small>] A [</small>]"
-  );
+  if (vancouverElement) {
+    let vancouverDateElement = vancouverElement.querySelector(".date");
+    let vancouverTimeElement = vancouverElement.querySelector(".time");
+    let vancouverTime = moment().tz("America/Vancouver");
+    vancouverDateElement.innerHTML = vancouverTime.format("Do MMMM YYYY");
+    vancouverTimeElement.innerHTML = vancouverTime.format(
+      "h:mm:ss [<small>] A [</small>]"
+    );
+  }
 }
 
 showCurrentTime();
