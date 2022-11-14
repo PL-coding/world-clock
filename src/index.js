@@ -37,7 +37,12 @@ showCurrentTime();
 setInterval(showCurrentTime, 1000);
 
 function updateCity(event) {
-  let cityName = event.target.value.replace("_", " ").split("/")[1];
+  let timeZoneElement = event.target.value;
+  if (timeZoneElement === "current") {
+    timeZoneElement = moment.tz.guess();
+  }
+  let cityName = timeZoneElement.replace("_", " ").split("/")[1];
+
   searchCity(cityName);
   updateTime();
   setInterval(updateTime, 1000);
