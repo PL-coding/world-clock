@@ -94,6 +94,10 @@ function currentTemperature(response) {
                 response.data.weather[0].description
               }</p>
              </div>
+    <div class="conditions">
+          <p>Feels like</p>
+              <h3>${Math.round(response.data.main.feels_like)}°C</h3>
+      </div>
   <div class="conditions">
           <p>Humidity</p>
               <h3>${response.data.main.humidity}%</h3>
@@ -108,7 +112,9 @@ function currentTemperature(response) {
               <p id="uvscale"></p>
             </div>
             </div>
+            <div class="cityLink">
          <a href="/">All cities</a>
+         </div>
         
 
     `;
@@ -131,7 +137,7 @@ function displayForecast(response) {
   document.querySelector("#uv").innerHTML = uv;
   if (uv <= 2) {
     uvscale.innerHTML = `Low`;
-    uvscale.style.color = "#2ab231";
+    uvscale.style.color = "#34d862";
   } else if (uv < 5.1) {
     uvscale.innerHTML = `Moderate`;
     uvscale.style.color = "#efe940";

@@ -6,30 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.38/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Louise Gray</title>
     <link rel="icon" href="media/LG-icon.png" type="image/icon type" />
   </head>
   <body>
-    <div class="container">
+    <div class="header">
       <h1>World Clock</h1>
 
       <select name="" id="cities">
         <option value="">Select a city</option>
         <option value="current">Current location</option>
+        <option value="Europe/Amsterdam">Amsterdam</option>
+        <option value="Pacific/Auckland">Auckland</option>
+        <option value="Asia/Bangkok">Bangkok</option>
+        <option value="Europe/Berlin">Berlin</option>
         <option value="Africa/Cairo">Cairo</option>
+        <option value="America/Chicago">Chicago</option>
+        <option value="America/Guayaquil">Guayaquil</option>
+        <option value="Asia/Istanbul">Istanbul</option>
         <option value="Africa/Johannesburg">Johannesburg</option>
         <option value="Asia/Kathmandu">Kathmandu</option>
         <option value="America/Lima">Lima</option>
         <option value="Europe/London">London</option>
+        <option value="Africa/Nairobi">Nairobi</option>
         <option value="America/New_York">New York</option>
         <option value="Australia/Perth">Perth</option>
         <option value="Australia/Sydney">Sydney</option>
         <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Africa/Tripoli">Tripoli</option>
         <option value="America/Vancouver">Vancouver</option>
         <option value="Europe/Vienna">Vienna</option>
       </select>
+    </div>
+    <div class="container">
       <div id="city">
         <div class="city" id="sydney">
           <div>
@@ -55,7 +74,6 @@
       </div>
       <div id="temperature"></div>
     </div>
-
     <footer>
       This page was coded by <span class="brand">Louise Gray</span> and is
       <a href="https://github.com/PL-coding/world-clock"
